@@ -1,0 +1,37 @@
+@theme {
+ --font: "Montserrat", sans-serif;
+ --code-font: "Source Code Pro", monospace;
+
+ /* default fluid fonts */
+ /* Utilizing a clean formula: clamp(min, base + scaling, max) */
+ --text-p-fluid: clamp(1rem, 0.95rem + 0.25vw, 1.2rem);
+ --text-lead-fluid: clamp(1.1rem, 1rem + 0.35vw, 1.3rem);
+ --text-h4-fluid: clamp(1.3rem, 1.2rem + 0.5vw, 1.6rem);
+ --text-h3-fluid: clamp(1.5rem, 1.35rem + 0.75vw, 2rem);
+ --text-h2-fluid: clamp(2rem, 1.7rem + 1vw, 2.4rem);
+ --text-h1-fluid: clamp(2.5rem, 2.2rem + 1.5vw, 3.5rem);
+
+ /* colors */
+ --primary: var(--color-rose-800);
+ --card-bg: var(--color-slate-50);
+ --bg-color: var(--color-slate-100);
+ --page-text: var(--color-slate-700);
+
+ /* Informaton colors */
+ --error-color: var(--color-red-800);
+ --alert-color: var(--color-amber-700);
+ --success-color: var(--color-green-700);
+
+ --shadow: rgba(0, 0, 0, 0.1);
+ --transition: all 0.3s ease;
+}
+
+/* Explicitly define the dark variant logic */
+@custom-variant dark (&:where(.dark, .dark *));
+
+.dark {
+ --bg-color: var(--color-neutral-900);
+ --page-text: var(--color-slate-100);
+ --primary: var(--color-sky-900);
+ --card-bg: var(--color-neutral-800);
+}
