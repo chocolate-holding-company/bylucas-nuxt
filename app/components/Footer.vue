@@ -1,8 +1,8 @@
 <template>
- <footer class="bg-slate-800 pt-8 text-center pb-12 px-7 mt-18">
+ <footer class="bg-slate-800 pt-8 text-center pb-12 px-7 mt-5">
   <div class="inner">
    <div class="mb-7">
-    <h3 class="text-(--primary) font-medium mb-1">Hill Walking Made Easy</h3>
+    <h3 class="text-rose-800 font-medium mb-1">Hill Walking Made Easy</h3>
     <p class="mb-3 opacity-90 text-neutral-100">
      Your guide to exploring the hills safely and confidently.
     </p>

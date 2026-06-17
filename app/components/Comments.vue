@@ -17,9 +17,9 @@ const handleComment = async () => {
 </script>
 <template>
  <section
-  class="mx-auto my-32 max-w-4xl border border-slate-300 bg-gray-50 px-6 py-16 text-center shadow-lg rounded-xl md:px-24"
+  class="mx-auto my-32 max-w-4xl border border-(--border-color) bg-(--form-bg) px-6 py-16 text-center shadow-lg rounded-xl md:px-24"
  >
-  <h3 class="mb-10 text-center text-2xl font-bold text-(--page-text)">
+  <h3 class="mb-10 text-center font-bold text-(--form-text)">
    Comments ({{ comments.length }})
   </h3>
 
@@ -27,7 +27,7 @@ const handleComment = async () => {
    <div
     v-for="c in comments"
     :key="c.id"
-    class="rounded-lg border border-slate-200 bg-white p-5 shadow-xs transition-all has-[.moderation-badge]:border-l-4 has-[.moderation-badge]:border-l-amber-300 has-[.moderation-badge]:bg-slate-50/50"
+    class="rounded-lg border border-(--border-color) bg-(--form-inner) p-5 shadow-xs transition-all has-[.moderation-badge]:border-l-4 has-[.moderation-badge]:border-l-amber-300 has-[.moderation-badge]:bg-slate-50/50"
    >
     <div class="mb-2 flex items-center justify-between">
      <span class="flex items-center gap-2 font-bold text-blue-700">
@@ -39,7 +39,7 @@ const handleComment = async () => {
        Awaiting Moderation
       </span>
      </span>
-     <span class="text-xs font-semibold text-slate-400">
+     <span class="text-xs font-semibold text-form-text">
       {{
        c.createdAt?.toDate
         ? c.createdAt.toDate().toLocaleDateString()
@@ -48,7 +48,7 @@ const handleComment = async () => {
      </span>
     </div>
 
-    <p class="text-slate-600 text-sm">{{ c.content }}</p>
+    <p class="text-form-text text-sm">{{ c.content }}</p>
 
     <div
      v-if="c.adminReply"
@@ -58,23 +58,25 @@ const handleComment = async () => {
       class="mb-1 block text-[0.7rem] font-extrabold uppercase text-blue-900"
       >Admin Response</span
      >
-     <p class="text-slate-700">{{ c.adminReply }}</p>
+     <p class="text-form-text">{{ c.adminReply }}</p>
     </div>
    </div>
   </div>
 
-  <p v-else class="mb-6 text-center font-medium text-slate-500">
+  <p v-else class="mb-6 text-center font-medium text-form-text">
    No comments yet. Be the first to start the conversation!
   </p>
 
   <div
-   class="rounded-xl border border-slate-200 bg-slate-50 p-6 text-left shadow-md"
+   class="rounded-xl border border-(--border-color) bg-(--form-inner) p-6 text-left shadow-md"
   >
-   <h4 class="mb-4 font-semibold text-slate-700">Leave a Comment</h4>
+   <h4 class="mb-4 text-xl font-semibold text-(--form-text)">
+    Leave a Comment
+   </h4>
    <form @submit.prevent="handleComment" class="space-y-4">
     <input v-model="form.fax" type="text" class="hidden" tabindex="-1" />
 
-    <div class="text-slate-700">
+    <div>
      <input
       v-model="form.name"
       type="text"
@@ -84,7 +86,7 @@ const handleComment = async () => {
      />
     </div>
 
-    <div class="text-slate-700">
+    <div>
      <textarea
       v-model="form.content"
       placeholder="Your thoughts..."

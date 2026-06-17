@@ -5,11 +5,6 @@ export default defineNuxtConfig({
  future: {
   compatibilityVersion: 4,
  },
- app: {
-  head: {
-   script: [{ src: "/theme-check.js" }],
-  },
- },
  devtools: { enabled: true },
  plugins: ["./plugins/firebase.client.ts"],
  runtimeConfig: {
@@ -24,6 +19,9 @@ export default defineNuxtConfig({
   },
  },
  modules: ["@nuxt/content", "@nuxtjs/color-mode"],
+ colorMode: {
+  classSuffix: "",
+ },
  css: ["./app/css/main.css"],
  vite: {
   plugins: [tailwindcss()],

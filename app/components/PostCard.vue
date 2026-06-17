@@ -54,7 +54,7 @@ onMounted(() => {
   </div>
 
   <div class="p-4">
-   <h3 class="mb-2 text-xl text-slate-600 font-semibold">
+   <h3 class="mb-2 text-xl text-(--primary) font-semibold">
     {{ props.post.title }}
    </h3>
    <p class="text-(--page-text) text-base overflow-hidden mb-3 line-clamp-3">

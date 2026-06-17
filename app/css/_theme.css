@@ -16,6 +16,10 @@
  --card-bg: var(--color-slate-50);
  --bg-color: var(--color-slate-100);
  --page-text: var(--color-slate-700);
+ --border-color: var(--color-slate-300);
+ --form-bg: var(--color-zinc-50);
+ --form-text: var(--color-zinc-700);
+ --form-inner: var(--color-zinc-100);
 
  /* Informaton colors */
  --error-color: var(--color-red-800);
@@ -24,6 +28,7 @@
 
  --shadow: rgba(0, 0, 0, 0.1);
  --transition: all 0.3s ease;
+ --focus-width: 2px;
 }
 
 /* Explicitly define the dark variant logic */
@@ -32,6 +37,11 @@
 .dark {
  --bg-color: var(--color-neutral-900);
  --page-text: var(--color-slate-100);
- --primary: var(--color-sky-900);
+ --primary: var(--color-sky-600);
  --card-bg: var(--color-neutral-800);
+ --border-color: var(--color-slate-500);
+ --form-bg: var(--color-zinc-800);
+ --form-text: var(--color-zinc-100);
+ --form-inner: var(--color-zinc-950);
+ --focus-width: 3px;
 }

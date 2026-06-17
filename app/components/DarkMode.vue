@@ -5,7 +5,7 @@
   class="relative p-6 my-5 rounded-xl bg-gray-100 dark:bg-zinc-800 text-gray-800 dark:text-yellow-400 transition-colors duration-300 dark:ring-zinc-700 active:scale-90"
   aria-label="Toggle Dark Mode"
  >
-  <span v-if="!colorMode.unknown">
+  <span v-if="colorMode.value">
    <svg
     v-if="colorMode.value === 'light'"
     class="absolute inset-0 m-auto w-6 h-6 transition-all duration-500 transform dark:opacity-0 dark:-rotate-90 opacity-100 rotate-0"

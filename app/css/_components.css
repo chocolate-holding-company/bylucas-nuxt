@@ -3,7 +3,7 @@
 }
 
 @utility but-primary {
- @apply border-2 border-solid border-(--primary) text-sm rounded-lg font-medium tracking-[1px] transition-all duration-200;
+ @apply border-2 border-solid border-(--primary) text-sm rounded-lg font-medium text-(--primary) tracking-[1px] transition-all duration-200;
 
  &:hover {
   @apply bg-(--primary) text-amber-100 scale-105;
