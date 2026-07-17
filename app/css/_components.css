@@ -1,5 +1,5 @@
 @utility inner {
- @apply max-w-7xl mx-auto px-8;
+ @apply max-w-7xl mx-auto px-4 sm:px-8;
 }
 
 @utility but-primary {
@@ -7,5 +7,38 @@
 
  &:hover {
   @apply bg-(--primary) text-amber-100 scale-105;
+ }
+}
+
+@utility intro-para {
+ @apply border-l border-r border-2 border-b-(--post-color) bg-(--post-color-bg) px-6 py-2 mt-18;
+
+ & p {
+  @apply text-sm text-(--post-color-text) leading-snug font-semibold mb-1 mt-0;
+ }
+
+ & p:last-child {
+  @apply text-[11px] tracking-wider;
+ }
+}
+
+@layer utilities {
+ .prose strong,
+ .prose b {
+  color: inherit !important;
+ }
+ .prose blockquote p {
+  @apply text-(--post-color-text) font-serif italic before:content-none after:content-none py-3;
+ }
+
+ .prose hr {
+  @apply my-12 mx-5 border-0 h-[1px] bg-(--border-color) relative overflow-visible;
+  box-shadow: var(--bg-color) 0 0 0 5px;
+
+  &::after {
+   content: "oooo";
+   @apply absolute -top-2.5 left-[47%] text-(--border-color) bg-(--bg-color) text-[12px];
+   box-shadow: var(--bg-color) 0 0 0 8px;
+  }
  }
 }

@@ -54,14 +54,14 @@ onMounted(() => {
   </div>
 
   <div class="p-4">
-   <h3 class="mb-2 text-xl text-(--primary) font-semibold">
+   <h3 class="mb-2 text-xl text-(--page-text) font-semibold">
     {{ props.post.title }}
    </h3>
    <p class="text-(--page-text) text-base overflow-hidden mb-3 line-clamp-3">
     {{ props.post.description }}
    </p>
    <div
-    class="text-[0.875rem] text-[#999] pt-3 border-t-2 border-t-solid border-t-slate-200 font-medium"
+    class="text-[0.875rem] text-[#999] pt-3 border-t border-t-solid border-t-slate-300 font-medium"
    >
     <span class="post-date">{{ formatDate(props.post.date) }}</span>
    </div>

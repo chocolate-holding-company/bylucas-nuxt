@@ -17,9 +17,13 @@
  --bg-color: var(--color-slate-100);
  --page-text: var(--color-slate-700);
  --border-color: var(--color-slate-300);
- --form-bg: var(--color-zinc-50);
+ --form-bg: var(--color-zinc-100);
  --form-text: var(--color-zinc-700);
  --form-inner: var(--color-zinc-100);
+ --post-color: var(--color-emerald-800);
+ --post-color-text: var(--color-emerald-600);
+ --post-color-bg: var(--color-emerald-50);
+ --caption: var(--color-emerald-900);
 
  /* Informaton colors */
  --error-color: var(--color-red-800);
@@ -39,9 +43,10 @@
  --page-text: var(--color-slate-100);
  --primary: var(--color-sky-600);
  --card-bg: var(--color-neutral-800);
- --border-color: var(--color-slate-500);
+ --border-color: var(--color-slate-700);
  --form-bg: var(--color-zinc-800);
  --form-text: var(--color-zinc-100);
  --form-inner: var(--color-zinc-950);
  --focus-width: 3px;
+ --caption: var(--color-emerald-100);
 }

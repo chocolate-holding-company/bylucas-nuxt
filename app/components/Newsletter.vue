@@ -11,7 +11,7 @@ const onSubscribe = async () => {
 
 <template>
  <section
-  class="max-w-4xl my-30 mx-auto py-10 px-6 md:px-25 bg-(--form-bg) border border-(--border-color) rounded-xl text-center shadow-lg"
+  class="max-w-4xl my-30 mx-auto py-10 px-3 sm:px-6 md:px-25 bg-(--form-bg) border border-(--border-color) rounded-xl text-center shadow-lg"
  >
   <h3 class="mb-6 font-bold">Join our inner circle</h3>
   <p class="mb-2 text-lg">

@@ -13,35 +13,32 @@ export const blogPosts = [
  },
 
  {
-  _path: "/blog/beginners",
-  title: "Beginner's Guide to Hill Walking",
+  _path: "/blog/delhi",
+  title: "Delhi",
   description:
-   "Everything you need to know to start your hill walking journey safely and confidently.",
+   "Delhi an introduction to incredible India, the famous roads, budget hotels, the first real curry, the heat and ooh! that smell, what a culture shock.",
   image:
-   "https://images.pexels.com/photos/1365425/pexels-photo-1365425.jpeg?auto=compress&cs=tinysrgb&w=800",
-  category: "Beginner",
-  date: "2024-11-15",
+   "https://images.pexels.com/photos/20083843/pexels-photo-20083843.jpeg?auto=compress&cs=tinysrgb&w=800",
+  category: "India",
+  date: "2026-07-05",
  },
  {
-  _path: "/blog/command-line",
-  title: "Command Line Cheat Sheet",
+  _path: "/blog/packing-list",
+  title: "Packing List",
   description:
-   "A comprehensive guide to the must-have equipment for safe and enjoyable hill walking adventures.",
-  image:
-   "https://images.pexels.com/photos/1687845/pexels-photo-1687845.jpeg?auto=compress&cs=tinysrgb&w=800",
-  category: "Gear",
-  date: "2024-11-10",
+   "Packing for a cycle tour in India takes some planning, we need to be light yet carry all essential clothing and bike tools and fit all into two 20ltr panniers.",
+  image: "/images/packing-two.webp",
+  category: "India",
+  date: "2026-07-16",
  },
  {
-  _path: "/blog/git-cheat-sheet",
-  title: "Git Cheat-Sheet",
+  _path: "/blog/conclusion",
+  title: "In Conclusion",
   description:
-   "Build the strength and endurance needed to tackle challenging hill walks with confidence.",
-  image:
-   "https://images.pexels.com/photos/4662343/pexels-photo-4662343.jpeg?auto=compress&cs=tinysrgb&w=800",
-  category: "Fitness",
-  date: "2024-11-05",
-  author: "James Wilson",
+   "Cycle problems encountered while touring India included brake and pannier problems. The bike performed well but had a long-standing problem with brake discs.",
+  image: "/images/in-conclusion.webp",
+  category: "India",
+  date: "2026-07-15",
  },
  {
   _path: "/blog/navigation-skills-for-hill-walkers",

@@ -17,7 +17,7 @@ const handleComment = async () => {
 </script>
 <template>
  <section
-  class="mx-auto my-32 max-w-4xl border border-(--border-color) bg-(--form-bg) px-6 py-16 text-center shadow-lg rounded-xl md:px-24"
+  class="mx-auto my-32 max-w-4xl border border-(--border-color) bg-(--form-bg) px-3 py-16 text-center shadow-lg rounded-xl sm:px-6 md:px-24"
  >
   <h3 class="mb-10 text-center font-bold text-(--form-text)">
    Comments ({{ comments.length }})

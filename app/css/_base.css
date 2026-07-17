@@ -51,6 +51,7 @@
  }
  h2 {
   font-size: var(--text-h2-fluid);
+  margin-bottom: 0.7rem;
  }
  h3 {
   font-size: var(--text-h3-fluid);
@@ -61,5 +62,8 @@
 
  .lead {
   font-size: var(--text-lead-fluid);
+ }
+ p {
+  font-size: var(--text-p-fluid);
  }
 }

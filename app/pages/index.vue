@@ -44,7 +44,7 @@
    </div>
 
    <div
-    class="grid grid-cols-[repeat(auto-fill,minmax(350px,1fr))] gap-5 md:gap-7 mb-6"
+    class="grid grid-cols-1 sm:grid-cols-[repeat(auto-fill,minmax(320px,1fr))] gap-5 md:gap-7 mb-6"
    >
     <PostCard
      v-for="(post, index) in displayedPosts"
@@ -123,9 +123,38 @@ const loadMore = async () => {
  isLoading.value = false;
 };
 
+const siteRoot = "https://bylucas.org";
+
+useSeoMeta({
+ title: "Home | bylucas",
+ description: "description for bylucas to come.",
+
+ // Open Graph
+ ogTitle: "Home | bylucas",
+ ogDescription:
+  "A personal collection of long-distance hiking routes, cycling adventures, and web development references.",
+ ogType: "website",
+ ogUrl: siteRoot,
+ ogImage: `${siteRoot}/images/default-share.webp`, // Your primary brand share image
+
+ // Twitter Card
+ twitterCard: "summary_large_image",
+ twitterTitle: "Home | bylucas",
+ twitterDescription:
+  "A personal collection of long-distance hiking routes, cycling adventures, and web development references.",
+ twitterImage: `${siteRoot}/images/default-share.webp`,
+});
+
 useHead({
- title: "Hill Walking Made Easy",
- meta: [{ name: "description", content: "Expert guides for hill walking." }],
+ htmlAttrs: {
+  lang: "en",
+ },
+ link: [
+  {
+   rel: "canonical",
+   href: siteRoot,
+  },
+ ],
 });
 </script>
 
